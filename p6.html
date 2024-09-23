@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de busqueda avanzada</h1>
+    <label for="titulo">Titulo del libro:</label>
+    <input type="text" name="titulo" required>
+    <br><br>
+    <label for="autor">Nombre del autor:</label>
+    <input type="text" name="autor" required>
+    <br><br>
+    <label for="genero">Genero del libro:</label>
+    <br>
+    <select name="genero" id="genero">
+        <option value="Romance">Romance</option>
+        <option value="Ciencia ficcion">Ciencia ficcion</option>
+        <option value="Drama">Drama</option>
+        <option value="Fantasia">Fantasia</option>
+    </select>
+    <br><br>
+    <label>Rango de fechas de publicacion:</label>
+    <br>
+    <label for="fecha1">Desde:</label>
+    <input type="date" name="fecha1" required>
+    <br>
+    <label for="fecha2">Hasta:</label>
+    <input type="date" name="fecha2" requiered>
+    <br><br>
+    <label for="ordenar">Ordenar por: </label>
+    <br>
+    <select name="ordenar" id="ordenar">
+        <option value="popularidad">Popularidad</option>
+        <option value="fecha">Fecha</option>
+        <option value="relevancia">Relevancia</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Buscar">
+</body>
+</html>
