@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSSp16.css">
+</head>
+<body>
+    <header id="Header">
+        <h1 id="TituloHeader">UNIDADES DE MEDIDA EN CSS</h1>
+    </header>
+    <main id="Main">
+        <h2 id="Titulo1">QUE SON LAS UNIDADES EM EN CSS?</h2>
+        <P class="Texto">
+            Un em, es básicamente el tamaño de una letra «M» (bien podría ser cualquier otra letra) del elemento al cual se esté aplicando esta medida. Es decir, si en elemento tiene aplicado un tamaño de  fuente de 16 pixeles, entonces 1 em será igual a 16px (los navegadores de manera predeterminada definen un font-size de 16px al elemento HTML, por lo tanto, por defecto 1em es igual a 16px).
+            <br>
+            La unidad em es escalable y siempre depende de su elemento padre. Por ejemplo, si el elemento body tiene un tamaño de fuente de 16px y un elemento hijo tiene una fuente con tamaño 1.3em, este texto se mostrará de un tamaño un 30% más grande que el del body (20.8px), mientras que si dentro de ese elemento tenemos otro hijo con un font-size de 1.3 em, el tamaño de fuente de este objeto sería un 30% más grande que el tamaño de su padre (27.04px).
+            <br>
+            Body = 1em (16px)
+            Hijo = 1.3em (16px x 1.3 = 20.8px)
+            Nieto = 1.3em (20.8px x 1.3 = 27.04px)
+            <br>
+            Es recomendable usar la unidad de medida em para definir los tamaños de fuente, los altos de línea y también para elementos de diseño que no requieran ser muy exactos o que requieran una medida que tenga relación con el tamaño del texto, como por ejemplo el margen entre párrafos, el relleno interior de los blockquotes, etc.
+            <br>
+            También se puede aplicar a elementos generales del layout aunque no es muy recomendable, ya que si eventualmente se cambia el tamaño de fuente de uno de ellos, se podría estropear el diseño.
+        </P>
+        <br>
+        <h2 id="Titulo2">QUE SON LAS UNIDADES REM EN CSS?</h2>
+        <p class="Texto">
+            La unidad de medida rem es muy similar a em, con la única diferencia de que no es escalable, esto quiere decir que no depende del elemento padre, sino del elemento raíz del documento, el elemento HTML. Rem significa «Root Em«, o sea, es un em basado en la raíz.
+            <br>
+            Esto significa que si el elemento HTML tiene un tamaño de fuente de 16px (como es por defecto), entonces 1rem, sería igual a 16px, y si queremos aplicar un tamaño basado en rem a cualquier elemento de la página, no importará cual sea el tamaño de fuente que tenga asociado ese elemento, ya que 1 rem siempre será igual a 16 pixeles a no ser que se modifique el elemento raíz.
+            <br>
+            Usar rem nos permite cierta estructura para poder definir ciertas partes del layout, pero al mismo tiempo nos entrega cierta escalabilidad para respetar las configuraciones de cada usuario.
+            <br>
+            Esta unidad de medida es recomendable para aplicar a elementos del layout que requieran medidas fijas y eventualmente también para textos que deseemos que tengan un tamaño de fuente que no dependa de su elemento padre.
+            <br>
+            Los rem, son una unidad muy interesante también para definir los media quieries de CSS. Dale un vistazo al código fuente de esta misma página y verás que los rem, son la unidad más utilizada en diferentes instancias.
+        </p>
+        <br>
+        <h2 id="Titulo3">QUE SON LAS UNIDADES % EN CSS?</h2>
+        <p class="Texto">
+            La unidad de medida porcentual es la que se usa por defecto en los elementos HTML en donde de manera predeterminada cada elemento de bloque usa un ancho del 100%, es por eso que cuando achicamos la ventana del navegador con una página que no tenga estilos, la página se adapta, ya que siempre usará el ancho total visible.
+            <br>
+            Pero nosotros podemos utilizar  los porcentajes de una manera más avanzada tratando de generar layouts mas complejos.
+            <br>
+            Supongamos, por ejemplo, que tienes un div que contiene todos los elementos de la página y, según el diseño, este elemento debiera medir 1200 pixeles.
+        </p>
+        <h2 id="Titulo4">QUE SON LOS PX EN CSS?</h2>
+        <p class="Texto">
+            Los pixeles son una unidad con la que muchos desarrolladores se sienten cómodos. Al expresar un valor en pixeles en un elemento el tamaño de dicho elemento será fijo independientemente de la resolución o el tamaño de la pantalla.
+            <br>
+            Un valor expresado en pixeles siempre aparecerá con el mismo tamaño tanto en un smartphone como en una pantalla de retina (retina es sinónimo de alta densidad — high density).
+            <br>
+            Es probable que en una pantalla de computadora se vea bien ya que este elemento tiene un tamaño fijo porque siempre va a medir 500px pero si conforme vas disminuyendo el tamaño de la pantalla (por ejemplo a 300px), y como el elemento tiene una medida fija que no cambia, provoca que se genere una barra de scroll horizontal. Por lo tanto, se debe usar con cuidado esta unidad.
+        </p>
+    </main>
+</body>
+</html>

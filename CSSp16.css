@@ -1,0 +1,38 @@
+#Header{
+    color:red;
+    text-align: center;
+    border: 5px dotted black;
+}
+#Main{
+    border: 5px double black; 
+    padding: 10px;
+
+}
+.Texto{
+    text-align: justify;
+    background-color: rgb(174, 245, 235);
+    font-size: large;
+    font-style: normal;
+    font-family: sans-serif;
+    padding: 15px;
+}
+#Titulo1{
+    text-align: left;
+    color: rgb(5, 228, 5);
+}
+#Titulo2{
+    text-align: left;
+    color: rgb(63, 143, 196);
+}
+#Titulo3{
+    text-align: left;
+    color: yellow;
+}
+#Titulo4{
+    text-align: left;
+    color: cyan;
+}
+h2{
+    background-color: rgb(184, 51, 124);
+    font-style: italic;
+}
