@@ -1,0 +1,85 @@
+#Header{
+    display: block;
+    text-align: center;
+}
+#Nombre-tienda{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Navegador{
+    border-bottom: 1px solid black;
+    place-content: center;
+    font-size: 25px;
+}
+a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Main{
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Texto{
+   font-family: Arial, Helvetica, sans-serif;
+}
+#Texto-copy{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#Section-nosotros{
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Texto-nosotros{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h2{
+    color: rgb(180, 37, 37);
+}
+li{
+    list-style-position: inside;
+}
+span{
+    color: blue;
+}
+#Section-categorias-principal{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#Titulo-categorias{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imagen-cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Titulo-nuestros-productos{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Main{
+    display: flex;
+}
+#Footer{
+   display: flex; 
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-between;
+   margin-left: 250px;
+   margin-right: 250px;
+}
+.Navegador2{
+    display: flex;
+    flex-direction: column;
+}
