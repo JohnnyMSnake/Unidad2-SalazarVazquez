@@ -4,7 +4,6 @@
 }
 #Nombre-tienda{
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(2, 29, 179);
 }
 .Navegador{
     border-bottom: 1px solid black;
@@ -43,4 +42,7 @@ h2{
 }
 li{
     list-style-position: inside;
+}
+span{
+    color: blue;
 }
