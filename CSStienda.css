@@ -1,0 +1,129 @@
+#Header{
+    display: block;
+    text-align: center;
+}
+#Nombre-tienda{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Navegador{
+    border-bottom: 1px solid black;
+    place-content: center;
+    font-size: 25px;
+}
+a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Main{
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Texto{
+   font-family: Arial, Helvetica, sans-serif;
+}
+#Texto-copy{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#Section-nosotros{
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Texto-nosotros{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h2{
+    color: rgb(180, 37, 37);
+}
+li{
+    list-style-position: inside;
+}
+span{
+    color: blue;
+}
+#Section-categorias-principal{
+    display: flex;
+    justify-content: center;
+}
+#Section-categorias-principal section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 400px;
+    margin-right: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+#Titulo-categorias{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imagen-cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Titulo-nuestros-productos{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Main{
+    display: flex;
+    flex-direction: column;
+    grid: 250px;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+#Main li{
+    color: blue;
+}
+#Main div{
+    border: 2px solid black;
+}
+#Main section{
+    display:grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+#Footer{
+   display: flex; 
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-around;
+   background-color: rgb(228, 227, 227)
+}
+
+.Section-categorias{
+    flex-direction: column;
+}
+
+#Footer h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Navegador2{
+    display: flex;
+    flex-direction: column;
+}
+#Producto1{
+    grid-column: 1/3;
+}
+
+#Producto4{
+    grid-column: 2/4;
+}
+#Producto5{
+    grid-column: 1/3;
+}
