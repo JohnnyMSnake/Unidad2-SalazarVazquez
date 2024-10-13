@@ -4,11 +4,17 @@
 }
 #Nombre-tienda{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: italic;
 }
 .Navegador{
+    display: flex;
     border-bottom: 1px solid black;
     place-content: center;
-    font-size: 25px;
+    font-size: 35px;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
 }
 a {
     color: black;
@@ -34,10 +40,12 @@ a {
 #Texto-nosotros{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+    font-size: 25px
 }
 
 h2{
     color: rgb(180, 37, 37);
+    font-size: 40px;
 }
 li{
     list-style-position: inside;
@@ -53,12 +61,16 @@ span{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-left: 400px;
-    margin-right: 350px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     text-align: center;
     justify-content: space-around;
-    gap: 20px;
+    gap: 30px;
+}
+#Section-categorias-principal div{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
 }
 #Titulo-categorias{
     text-align: center;
@@ -83,27 +95,41 @@ span{
     padding-bottom: 20px;
 }
 #Main li{
+    display: grid;
     color: blue;
 }
 #Main div{
+    display: grid;
     border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 20px;
 }
 #Main section{
     display:grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     justify-content: center;
     justify-content: space-between;
     gap: 20px;
-    padding-left: 400px;
-    padding-right: 400px;
+    margin: 20px;
+   
+}
+#Main button{
+    background-color: rgb(109, 109, 241);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
 }
 #Footer{
    display: flex; 
    flex-direction: row;
    justify-content: center;
    justify-content: space-around;
-   background-color: rgb(228, 227, 227)
+   background-color: rgb(240, 237, 237)
 }
 
 .Section-categorias{
@@ -116,6 +142,7 @@ span{
 .Navegador2{
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 #Producto1{
     grid-column: 1/3;
@@ -126,4 +153,180 @@ span{
 }
 #Producto5{
     grid-column: 1/3;
+}
+
+@media (max-width: 768px){
+    #Header nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .Navegador{
+        font-size: 20px;
+    }
+    #Section-categorias-principal section{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    #Section-categorias-principal img{
+        width: 170px;
+    }
+    #Main section{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 20px;
+    }
+    #Main div{
+        display: grid;
+        border: 2px solid black;
+        justify-content: center;
+        text-align: center;
+        justify-items: center;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 20px;
+    }
+    #Main button{
+        background-color: rgb(109, 109, 241);
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+    }
+    #Texto-nosotros{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-size: 10px
+    }
+    #Footer{
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        justify-content: space-around;
+        background-color: rgb(240, 237, 237)
+     }
+     .Navegador2{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    img{
+        width: 100px;
+    }
+    h2{
+        color: rgb(180, 37, 37);
+        font-size: 20px;
+    }
+    #Producto1{
+        grid-column: 1/2;
+    }
+    
+    #Producto4{
+        grid-column: 2/3;
+    }
+    #Producto5{
+        grid-column: 1/2;
+    }
+}
+@media (max-width: 480px){
+    #Header nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #Nombre-tienda{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-style: italic;
+    }
+    .Navegador{
+        font-size: 20px;
+    }
+    #Section-categorias-principal section{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        text-align: center;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    #Section-categorias-principal img{
+        width: 80px;
+    }
+    #Main section{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 20px;
+    }
+    #Main div{
+        display: grid;
+        border: 2px solid black;
+        justify-content: center;
+        text-align: center;
+        justify-items: center;
+        border-radius: 10px;
+        font-size: 7px;
+        padding: 20px;
+    }
+    #Main button{
+        background-color: rgb(109, 109, 241);
+        border-radius: 10px;
+        font-size: 8px;
+        color: white;
+    }
+    #Texto-nosotros{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-size: 6px
+    }
+    #Footer{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        justify-content: space-around;
+        background-color: rgb(240, 237, 237)
+     }
+     .Navegador2{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    #Texto-copy{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 10px;
+    }
+    img{
+        width: 100px;
+    }
+    h2{
+        color: rgb(180, 37, 37);
+        font-size: 15px;
+    }
+    #Producto1{
+        grid-column: 1/2;
+    }
+    
+    #Producto4{
+        grid-column: 1/2;
+    }
+    #Producto5{
+        grid-column: 1/2;
+    }
+    
 }
